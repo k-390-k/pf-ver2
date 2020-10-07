@@ -1,0 +1,8 @@
+<h1>一覧画面</h1>
+<%@tasks.each do |task|%>
+  <%=task.id%>
+  <%=task.name%>
+  <%=task.description%>
+  <%=link_to '削除する', task, method: :delete%>
+<%end%>
+

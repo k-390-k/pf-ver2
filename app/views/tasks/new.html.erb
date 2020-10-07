@@ -1,0 +1,7 @@
+<h1>タスク投稿画面</h1>
+<% form_with(model: @task, local: true) do |f| %>
+ <%=f.text_field :name%>
+ <%=f.text_area :description%>
+ <%=f.submit 'タスクを登録する'%>
+<%end %>
+
