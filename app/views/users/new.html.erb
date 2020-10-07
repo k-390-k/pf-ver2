@@ -24,3 +24,21 @@
     <%= f.submit 'Sign up', class: 'btn btn-primary btn-block' %>
   <% end %>
 </div>
+<div class="login-box">
+  <h1>Login</h1>
+  <%= form_with(model: @user, local: true) do |f| %>
+  <div class="text-box">
+     <%= f.text_field :name%>
+  </div>
+  <div class="text-box">
+      <%= f.text_field :email%>
+  </div>
+  <div class="text-box">
+      <%= f.password_field :password%>
+  </div>
+  <div class="text-box">
+      <%= f.password_field :password_confirmation%>
+  </div>
+     <%= f.submit 'Sign up', class: 'btn' %>
+  <%end%>
+</div>
